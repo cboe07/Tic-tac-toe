@@ -7,13 +7,25 @@
 
 	<link rel="stylesheet" type="text/css" href="styles.css">
 
+	<link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+
 </head>
 <body>
 
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row">
 			<div class="col-sm-12 text-center">
 				<h1>TIC TAC TOE</h1>
+				<!-- <img src="https://static3.scirra.net/images/newstore/products/2063/splash.png"/> -->
+			</div>
+		</div>
+		<div class="game-options col-sm-12 text-center">
+			<div>
+				<button id="computer" onclick="vsComputer();" class="user-response">One Player</button>
+				<button id="two-players" onclick="twoPlayer();" class="user-response">Two Players</button>
+			</div>
+			<div id="numberOfPlayers" class="col-sm-12 text-center">
+			<!-- Message for number of players -->
 			</div>
 		</div>
 		<div class="row">
@@ -22,22 +34,25 @@
 			</div>
 		</div>
 		<div class="row">
-			<div id="board" class="col-sm-12">
+			<div id="board" class="col-sm-12 text-center">
 				<div class="board-row">
-					<button id="A1" class="square">A1</button>
-					<button id="B1" class="square">B1</button>
-					<button id="C1" class="square">C1</button>
+					<button id="A1" class="square">&nbsp;</button>
+					<button id="B1" class="square">&nbsp;</button>
+					<button id="C1" class="square">&nbsp;</button>
 				</div>
 				<div class="board-row">
-					<button id="A2" class="square">A2</button>
-					<button id="B2" class="square">B2</button>
-					<button id="C2" class="square">C2</button>
+					<button id="A2" class="square">&nbsp;</button>
+					<button id="B2" class="square">&nbsp;</button>
+					<button id="C2" class="square">&nbsp;</button>
 				</div>
 				<div class="board-row">
-					<button id="A3" class="square">A3</button>
-					<button id="B3" class="square">B3</button>
-					<button id="C3" class="square">C3</button>
+					<button id="A3" class="square">&nbsp;</button>
+					<button id="B3" class="square">&nbsp;</button>
+					<button id="C3" class="square">&nbsp;</button>
 				</div>
+			</div>
+			<div class="button text-center">
+				<button type="reset" onclick="startNewGame();">Reset</button>
 			</div>
 		</div>
 

@@ -1,5 +1,21 @@
+*{
+	background-color: white;
+	color: #29228e;
+	font-family: 'Allerta Stencil';
+	/* font-size: 22px; */
+}
 h1{
-	color:  blue;
+	font-size: 60px;
+}
+
+.wrapper{
+	background-color: white;
+	margin: 10px;
+}
+
+img{
+	height: 150px;
+	width: 500px
 }
 
 #board{
@@ -11,14 +27,30 @@ h1{
 
 
 .square{
-	background-color: #FFF;
+	background-color: #29228e;
+	color:  white;
 	border:  2px solid #000;
 	outline: none;
 	width: 30%;
 	padding: 30px 0;
 	font-size: 80px;
+	border-radius: 10px;
 }
 
+.button{
+	margin: 10px;
+	color: gray;
+	outline: none;
+	border-radius: 10px;
+}
+
+
+
 .square:hover{
-	background-color: red;
+	background-color: #dd3011;
+}
+
+.winning-square{
+	background-color: green !important;
+	color: red !important;
 }
